@@ -1,5 +1,6 @@
 let a=document.getElementById(`fnumb`);
    let b=document.getElementById(`lnumb`);
+   let result=document.getElementById(`result`);
 
    function sum(){
      alert(+a+ + b);
