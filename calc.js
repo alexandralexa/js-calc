@@ -1,12 +1,15 @@
-let a=document.getElementById(`fnumb`);
-   let b=document.getElementById(`lnumb`);
-   let result=document.getElementById(`result`);
+let a=document.getElementById(`fnumb`).value;
+   let b=document.getElementById(`lnumb`).value;
+   
 
    function sum(){
-     alert(+a+ + b);
+     let c=(+a + +b);
+     let result=document.getElementById(`result`).innerText=c;
    }
 
-   
+   document.getElementById("go").onclick = function() {
+    sum();
+  }
 
    function min(){
      alert(+a - +b);
