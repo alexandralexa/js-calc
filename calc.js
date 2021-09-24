@@ -4,7 +4,7 @@ let a=document.getElementById(`fnumb`).value;
 
    function sum(){
      let c=(+a + +b);
-     let result=document.getElementById(`result`).innerText=c;
+     let result=document.getElementById("result").innerText= c;
    }
 
    document.getElementById("go").onclick = function() {
