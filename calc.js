@@ -1,9 +1,9 @@
-let a=document.getElementById(`fnumb`).value;
-   let b=document.getElementById(`lnumb`).value;
+let a=document.getElementById(`fnumb`);
+   let b=document.getElementById(`lnumb`);
    
 
    function sum(){
-     let c=(+a + +b);
+     let c=(+a.value + +b.value);
      let result=document.getElementById("result").innerText= c;
    }
 
@@ -12,16 +12,30 @@ let a=document.getElementById(`fnumb`).value;
   }
 
    function min(){
-     alert(+a - +b);
+     let d=(+a.value - +b.value);
+     let res=document.getElementById("result").innerText=d;
    }
+
+   document.getElementById("go1").onclick = function() {
+    min();
+  }
 
    function multy(){
-     alert(+a * +b)
+     let e=(+a.value * +b.value);
+     let mlt=document.getElementById(`result`).innerText=e;
    }
 
+   document.getElementById(`go2`).onclick=function() {
+    multy();
+  }
+
    function division(){
-     alert(+a / +b)
+    let f=(+a.value / +b.value);
+    let dvs=document.getElementById(`result`).innerText=f;
      
    }
+   document.getElementById(`go3`).onclick=function() {
+    division();
+  }
 
  
